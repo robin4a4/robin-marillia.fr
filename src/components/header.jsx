@@ -1,12 +1,38 @@
-import { createSignal } from "solid-js";
+import { createEffect, createSignal } from "solid-js";
 
-const TYPING_TEXT_DESKTOP = ["great code.", "graphic design.", "creating user interfaces.", "piano.", "solving problems."];
+const TYPING_TEXT_DESKTOP = ["great code.", "graphic design.", "piano.", "solving problems."];
 const TYPING_TEXT_MOBILE = ["piano.", "design.", "coding.", "photo." ];
 
 export default function Header() {
 
-    const [typingText, setTypingText] = createSignal(TYPING_TEXT_DESKTOP[0]);
+    const [chosenTextIndex, setChosenTextIndex] = createSignal(0);
+    const [chosenText, setChosenText] = createSignal(TYPING_TEXT_DESKTOP[chosenTextIndex()]);
+    const [currentTypedText, setCurrentTypedText] = createSignal("");
 
+    createEffect(()=>{
+        const chosenTextLength = chosenText().length;
+        let timeout;
+        if (chosenTextLength === currentTypedText()?.length) {
+
+            timeout = setTimeout(() => {
+                setCurrentTypedText("");
+                if (chosenTextIndex() + 1 < TYPING_TEXT_DESKTOP.length) {
+                    setChosenTextIndex(chosenTextIndex()+1);
+                    // thanks to the timeout the chosenTextIndex is correctly set here so we don't have to iterate
+                    setChosenText(TYPING_TEXT_DESKTOP[chosenTextIndex()]);
+                } else {
+                    setChosenTextIndex(0);
+                    setChosenText(TYPING_TEXT_DESKTOP[0]);
+                }
+            }, 1000)
+        } else {
+            clearTimeout(timeout);
+        }
+    })
+
+    createEffect(() => {
+        setInterval(() => setCurrentTypedText(`${currentTypedText()}${chosenText()?.charAt(Math.min(chosenText()?.length+1, currentTypedText()?.length))}`), 200);
+    })
 
     return (
         <div class="text-white relative h-screen">
@@ -20,7 +46,7 @@ export default function Header() {
                     <div>
                         <p class="text-4xl">I am a french full-stack engineer<br/> who loves 
                         <span class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-pink-500">
-                            <span>{typingText}</span>
+                            <span>{currentTypedText()}</span>
                             <span class="text-4xl font-extrabold bg-clip-text bg-gradient-to-br from-yellow-400 to-pink-500 motion-safe:animate-pulse-fast">|</span>
                         </span>
                         </p>
