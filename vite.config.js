@@ -7,4 +7,7 @@ export default defineConfig({
     target: 'esnext',
     polyfillDynamicImport: false,
   },
+  resolve: {
+    extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json', '.glb']
+  }
 });
