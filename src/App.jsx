@@ -3,7 +3,7 @@ import Content from "./components/Content"
 
 function App() {
   return (
-    <section class="bg-black w-full">
+    <section class="w-full">
       {/* <Header/> */}
       <Content/>
     </section>

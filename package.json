@@ -16,6 +16,7 @@
     "vite-plugin-solid": "^2.2.5"
   },
   "dependencies": {
+    "solid-headless": "^0.10.12",
     "solid-js": "^1.3.7",
     "three": "^0.137.5"
   },

@@ -7,7 +7,7 @@ export default function Experience({company}) {
     if (!content) return null;
 
     return (
-        <div class="flex w-full gap-4 items-start mb-8">
+        <div class="flex w-full gap-4 items-start mb-16">
             <div class="bg-neutral-900 rounded">
                 <div class="bg-neutral-100 p-4 rounded-md">
                     <img src={content.logo} class="min-w-[3rem] max-w-[3rem] h-auto"/>
@@ -29,7 +29,7 @@ export default function Experience({company}) {
                 <p>
                     {content.text}
                 </p>
-                <div class="border-t border-gray-900 py-2 mt-2">
+                <div class="py-2 mt-2">
                     {content.website && <a href={content.website} class="px-2 py-1 rounded-full font-bold uppercase tracking-wide text-xs bg-neutral-100 hover:bg-neutral-200 text-blue-600">Site web</a>}
                     <div class="flex items-center gap-2 mt-2">
                         <For each={content.technologies}>{
@@ -38,6 +38,14 @@ export default function Experience({company}) {
                         </For>
                     </div>
                 </div>
+                {content.images &&                 
+                    <div class="flex gap-2">
+                        <For each={content.images}>{
+                            (image, i) => <img src={image} class="flex-1 w-auto h-32 rounded-md hover:translate-y-1 duration-200 cursor-pointer"/>
+                        }
+                        </For>
+                    </div>
+                }
             </div>
         </div>
     )

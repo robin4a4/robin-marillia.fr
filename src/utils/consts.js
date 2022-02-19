@@ -2,6 +2,11 @@ import HellowattLogo from "../assets/logo/hellowatt-logo.png"
 import SratiLogo from "../assets/logo/srati-logo.png"
 import SipartechLogo from "../assets/logo/sipartech-logo.png"
 import ImmersionLogo from "../assets/logo/immersion-logo.jpeg"
+import FignossLogo from "../assets/logo/fignoss-logo.png"
+
+import FlyersFignossIllu from "../assets/images/flyers-fignoss-illu.jpg"
+import PosterFignossIllu from "../assets/images/poster-fignoss-illu.jpg"
+import TicketsFignossIllu from "../assets/images/tickets-fignoss-illu.png"
 
 export const MODEL_NAMES = {
     MACBOOK: "macbook",
@@ -26,12 +31,16 @@ export const TECHNOLOGY = {
     JAVASCRIPT: "javascript",
     TENSORFLOW: "tensorflow",
     SOLIDWORKS: "solidworks",
+    PHOTOSHOP: "photoshop",
+    ILLUSTRATOR: "illustrator",
+    PREMIERE: "premiere",
 }
 
 export const COMPANIES = {
     HELLOWATT: "hellowatt",
     SRATI: "srati",
     SIPARTECH: "sipartech",
+    FIGNOSS: "fignoss",
     IMMERSION: "immersion",
 }
 
@@ -60,6 +69,15 @@ export const COMPANIES_CONTENT = {
         title: "Data science internship at Sipartech",
         text: "During a one month internship I had to develop a tool that automatically extracts numbers and information from the receipts of the company. I used python and Tensorflow to create the script and PHP and Javascript to create an interface.",
         technologies: [TECHNOLOGY.PYTHON, TECHNOLOGY.PHP, TECHNOLOGY.JAVASCRIPT, TECHNOLOGY.TENSORFLOW]
+    },
+    [COMPANIES.FIGNOSS]: {
+        logo: FignossLogo,
+        from: "2018",
+        to: "2019",
+        title: "Communication and design for La Nuit des Fignoss",
+        text: "La Nuit des Fignoss is a Gala organized by the students of the Arts et Métiers school. More than 3000 people come each year to celebrate one of the most prestigious evening in the north of the France. I had to design the graphic charter, develop the web site and organize internal and external communication.",
+        technologies: [TECHNOLOGY.PHOTOSHOP, TECHNOLOGY.ILLUSTRATOR, TECHNOLOGY.PREMIERE],
+        images: [FlyersFignossIllu, PosterFignossIllu, TicketsFignossIllu]
     },
     [COMPANIES.IMMERSION]: {
         logo: ImmersionLogo,
