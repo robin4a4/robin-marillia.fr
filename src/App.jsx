@@ -4,7 +4,7 @@ import Content from "./components/Content"
 function App() {
   return (
     <section class="bg-black w-full">
-      <Header/>
+      {/* <Header/> */}
       <Content/>
     </section>
   );

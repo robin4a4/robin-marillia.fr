@@ -4,10 +4,12 @@ import Experience from "./Experience"
 
 export default function ProfessionalExperiences() {
     return (
-        <div class="w-1/2 m-auto pt-8">
+        <div class="w-1/2 m-auto">
             <Title>Professional experiences</Title>
-            <Experience company={COMPANIES.HELLOWATT} />
-            <Experience company={COMPANIES.SRATI} />
+            <For each={Object.values(COMPANIES)}>{
+                (company, i) => <Experience company={company} />
+            }
+            </For>
         </div>
     )
 }
