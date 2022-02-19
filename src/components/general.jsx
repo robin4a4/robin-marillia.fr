@@ -4,11 +4,11 @@ export default function Title(props) {
     const c = children(() => props.children);
 
     return (
-        <div class="mb-16 sticky top-0 pt-8 bg-black">
+        <div class="mb-16 sticky top-0 pt-8 bg-black pb-8">
             <h2 class="text-4xl font-extrabold text-white relative z-10">
                 {c}
             </h2>
-            <div class="absolute bottom-0 left-0 -mb-4 right-0 w-32 h-3 z-0 bg-gradient-to-r from-yellow-400 to-pink-500 rounded-full"></div>
+            <div class="absolute bottom-0 left-0 mb-3 right-0 w-32 h-3 z-0 bg-gradient-to-r from-yellow-400 to-pink-500 rounded-full"></div>
         </div>
     )
 }

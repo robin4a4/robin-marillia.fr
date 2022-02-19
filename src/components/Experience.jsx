@@ -1,4 +1,4 @@
-import {Tag} from './utils'
+import {Tag} from './general'
 import { For } from 'solid-js';
 import {COMPANIES_CONTENT} from "../utils/consts"
 

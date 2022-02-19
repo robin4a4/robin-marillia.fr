@@ -1,4 +1,4 @@
-import Title from "./utils"
+import Title from "./general"
 import {COMPANIES} from "../utils/consts"
 import Experience from "./Experience"
 
