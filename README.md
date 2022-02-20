@@ -1,6 +1,7 @@
 # Robin Marillia's portfolio.
 
-technologies used : 
+technologies used :
+
 - solidJS
 - tailwindcss
 - three.js
