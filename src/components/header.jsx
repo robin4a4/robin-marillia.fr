@@ -1,5 +1,7 @@
 import { createEffect, createSignal } from "solid-js";
 import AnimationComponent from "./AnimationComponent";
+import { isMobile } from "../utils/consts"
+
 
 const TYPING_TEXT_DESKTOP = [
   "great code.",
@@ -8,10 +10,19 @@ const TYPING_TEXT_DESKTOP = [
   "solving problems.",
 ];
 
+const TYPING_TEXT_MOBILE = [
+  "coding.",
+  "design.",
+  "piano.",
+];
+
 export default function Header() {
+
+  const typingText = isMobile ? TYPING_TEXT_MOBILE : TYPING_TEXT_DESKTOP;
+
   const [chosenTextIndex, setChosenTextIndex] = createSignal(0);
   const [chosenText, setChosenText] = createSignal(
-    TYPING_TEXT_DESKTOP[chosenTextIndex()]
+    typingText[chosenTextIndex()]
   );
   const [currentTypedText, setCurrentTypedText] = createSignal("");
 
@@ -21,13 +32,13 @@ export default function Header() {
     if (chosenTextLength === currentTypedText()?.length) {
       timeout = setTimeout(() => {
         setCurrentTypedText("");
-        if (chosenTextIndex() + 1 < TYPING_TEXT_DESKTOP.length) {
+        if (chosenTextIndex() + 1 < typingText.length) {
           setChosenTextIndex(chosenTextIndex() + 1);
           // thanks to the timeout the chosenTextIndex is correctly set here so we don't have to iterate
-          setChosenText(TYPING_TEXT_DESKTOP[chosenTextIndex()]);
+          setChosenText(typingText[chosenTextIndex()]);
         } else {
           setChosenTextIndex(0);
-          setChosenText(TYPING_TEXT_DESKTOP[0]);
+          setChosenText(typingText[0]);
         }
       }, 1000);
     } else {
@@ -59,13 +70,13 @@ export default function Header() {
         <div>
           <AnimationComponent />
         </div>
-        <div class="absolute top-0 bottom-0 mt-72 w-full flex items-center justify-center">
+        <div class="absolute top-0 bottom-0 mt-32 md:mt-72 w-full flex items-center justify-center px-4 md:px-0">
           <div>
             <p class="text-4xl drop-shadow-xl">
               I am a french full-stack engineer
               <br /> who loves
               <span class=" text-4xl font-extrabold text-white">
-                <span>{currentTypedText()}</span>
+                <span>{" "}{currentTypedText()}</span>
                 <span class="text-4xl font-extrabold bg-clip-text bg-gradient-to-br from-yellow-400 to-pink-500 motion-safe:animate-pulse-fast">
                   |
                 </span>

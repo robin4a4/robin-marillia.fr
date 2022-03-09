@@ -52,14 +52,14 @@ export default function Experience(props) {
               Site web
             </a>
           )}
-          <div class="flex items-center gap-2 mt-2">
+          <div class="flex items-center gap-2 mt-2 flex-wrap">
             <For each={content.technologies}>
               {(techno) => <Tag text={techno} />}
             </For>
           </div>
         </div>
         {content.images && (
-          <div class="flex gap-2">
+          <div class="flex gap-2 flex-wrap">
             <For each={content.images}>
               {(image) => (
                   <ImageModal image={image}/>

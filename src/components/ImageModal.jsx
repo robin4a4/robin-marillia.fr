@@ -20,11 +20,11 @@ export default function ImageModal({image}) {
   };
 
   return (
-    <>
-      <button type="button" onClick={openModal}>
+    <div>
+      <button type="button" onClick={openModal} class="w-auto">
         <img
           src={image}
-          class="flex-1 w-auto h-32 rounded-md hover:translate-y-1 duration-200 cursor-pointer"
+          class="h-32 rounded-md hover:translate-y-1 duration-200 cursor-pointer"
         />
       </button>
       <Transition
@@ -67,7 +67,7 @@ export default function ImageModal({image}) {
                 <div class="mb-4">
                   <button
                     type="button"
-                    class="inline-flex justify-center p-2 text-sm font-medium bg-white rounded-full hover:bg-orange-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
+                    class="inline-flex justify-center p-2 text-sm font-medium bg-white rounded-full hover:bg-gray-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
                     onClick={closeModal}
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -85,6 +85,6 @@ export default function ImageModal({image}) {
           </div>
         </Dialog>
       </Transition>
-    </>
+    </div>
   );
 }

@@ -7,6 +7,10 @@ import FignossLogo from "../assets/logo/fignoss-logo.png";
 import FlyersFignossIllu from "../assets/images/flyers-fignoss-illu.jpg";
 import PosterFignossIllu from "../assets/images/poster-fignoss-illu.jpg";
 import TicketsFignossIllu from "../assets/images/tickets-fignoss-illu.png";
+import { useMediaQuery } from "solid-use";
+
+
+export const isMobile = window.innerWidth < 768
 
 export const MODEL_NAMES = {
   MACBOOK: "macbook",
@@ -103,4 +107,10 @@ export const COMPANIES_CONTENT = {
   },
 };
 
+const personalExperiencesImages = {
+    
+}
+
 export default MODEL_NAMES;
+
+
