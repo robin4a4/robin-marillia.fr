@@ -1,5 +1,6 @@
 import { For } from "solid-js";
 import { Tag } from "./general";
+import ImageModal from "./ImageModal"
 import { COMPANIES_CONTENT } from "../utils/consts";
 
 export default function Experience(props) {
@@ -39,9 +40,9 @@ export default function Experience(props) {
           </span>
         </div>
       </div>
-      <div class="text-white">
-        <h3 class="text-xl font-bold mb-2">{content.title}</h3>
-        <p>{content.text}</p>
+      <div>
+        <h3 class="text-xl font-bold mb-2 text-white">{content.title}</h3>
+        <p class="text-gray-200">{content.text}</p>
         <div class="py-2 mt-2">
           {content.website && (
             <a
@@ -61,10 +62,7 @@ export default function Experience(props) {
           <div class="flex gap-2">
             <For each={content.images}>
               {(image) => (
-                <img
-                  src={image}
-                  class="flex-1 w-auto h-32 rounded-md hover:translate-y-1 duration-200 cursor-pointer"
-                />
+                  <ImageModal image={image}/>
               )}
             </For>
           </div>

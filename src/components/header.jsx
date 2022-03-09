@@ -37,7 +37,7 @@ export default function Header() {
 
   createEffect(() => {
     setInterval(
-      () => 
+      () =>
         setCurrentTypedText(
           `${currentTypedText()}${chosenText()?.charAt(
             Math.min(chosenText().length + 1, currentTypedText()?.length)
@@ -63,7 +63,7 @@ export default function Header() {
           <div>
             <p class="text-4xl drop-shadow-xl">
               I am a french full-stack engineer
-              <br /> who loves 
+              <br /> who loves
               <span class=" text-4xl font-extrabold text-white">
                 <span>{currentTypedText()}</span>
                 <span class="text-4xl font-extrabold bg-clip-text bg-gradient-to-br from-yellow-400 to-pink-500 motion-safe:animate-pulse-fast">
