@@ -1,9 +1,9 @@
-import { Tag } from "./general";
 import { For } from "solid-js";
+import { Tag } from "./general";
 import { COMPANIES_CONTENT } from "../utils/consts";
 
-export default function Experience({ company }) {
-  const content = COMPANIES_CONTENT[company];
+export default function Experience(props) {
+  const content = COMPANIES_CONTENT[props.company];
   if (!content) return null;
 
   return (
@@ -20,7 +20,7 @@ export default function Experience({ company }) {
               </span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
+                class="h-6 w-6"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -53,14 +53,14 @@ export default function Experience({ company }) {
           )}
           <div class="flex items-center gap-2 mt-2">
             <For each={content.technologies}>
-              {(techno, i) => <Tag text={techno} />}
+              {(techno) => <Tag text={techno} />}
             </For>
           </div>
         </div>
         {content.images && (
           <div class="flex gap-2">
             <For each={content.images}>
-              {(image, i) => (
+              {(image) => (
                 <img
                   src={image}
                   class="flex-1 w-auto h-32 rounded-md hover:translate-y-1 duration-200 cursor-pointer"

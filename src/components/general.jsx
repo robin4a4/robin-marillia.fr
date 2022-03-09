@@ -11,11 +11,11 @@ export default function Title(props) {
   );
 }
 
-export function Tag({ text }) {
+export function Tag(props) {
   return (
     <div class="px-2 py-1 rounded-full font-bold uppercase tracking-wide text-xs bg-neutral-900">
       <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-pink-500">
-        {text}
+        {props.text}
       </span>
     </div>
   );

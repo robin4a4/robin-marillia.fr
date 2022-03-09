@@ -1,5 +1,5 @@
-import Header from "./components/Header.jsx";
-import Content from "./components/Content.jsx";
+import Header from "./components/Header";
+import Content from "./components/Content";
 
 function App() {
   return (
