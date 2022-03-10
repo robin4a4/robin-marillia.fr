@@ -70,7 +70,7 @@ export default function Header() {
               I am a french full-stack engineer
               <br /> who loves
               <span class=" text-4xl font-extrabold text-white">
-                <span> {currentTypedText()}</span>
+                <span>&nbsp;{currentTypedText()}</span>
                 <span class="text-4xl font-extrabold bg-clip-text bg-gradient-to-br from-yellow-400 to-pink-500 motion-safe:animate-pulse-fast">
                   |
                 </span>
