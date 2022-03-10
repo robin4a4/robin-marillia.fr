@@ -1,6 +1,6 @@
 import { For } from "solid-js";
 import { Tag } from "./general";
-import ImageModal from "./ImageModal"
+import ImageModal from "./ImageModal";
 import { COMPANIES_CONTENT } from "../utils/consts";
 
 export default function Experience(props) {
@@ -61,9 +61,7 @@ export default function Experience(props) {
         {content.images && (
           <div class="flex gap-2 flex-wrap">
             <For each={content.images}>
-              {(image) => (
-                  <ImageModal image={image}/>
-              )}
+              {(image) => <ImageModal image={image} />}
             </For>
           </div>
         )}

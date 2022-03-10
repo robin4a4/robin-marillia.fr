@@ -7,10 +7,18 @@ import FignossLogo from "../assets/logo/fignoss-logo.png";
 import FlyersFignossIllu from "../assets/images/flyers-fignoss-illu.jpg";
 import PosterFignossIllu from "../assets/images/poster-fignoss-illu.jpg";
 import TicketsFignossIllu from "../assets/images/tickets-fignoss-illu.png";
-import { useMediaQuery } from "solid-use";
+import ArCardGif from "../assets/images/arcard.gif";
+import ArSolarScreen from "../assets/images/arsolar-screen.jpg";
+import BoomRender from "../assets/images/boom-render.png";
+import BoostrScreen from "../assets/images/boostr-screen.jpg";
+import BreadGrillRender from "../assets/images/bread-grill-render.png";
+import DesktopProjectorRender from "../assets/images/desktop-projector-render.png";
+import FusionRender from "../assets/images/fusion-render.png";
+import GlassRender from "../assets/images/glass-render.png";
+import PumpDrawing from "../assets/images/pump-drawing.png";
+import SbComponentScreen from "../assets/images/sb-component-screen.png";
 
-
-export const isMobile = window.innerWidth < 768
+export const isMobile = window.innerWidth < 768;
 
 export const MODEL_NAMES = {
   MACBOOK: "macbook",
@@ -107,10 +115,59 @@ export const COMPANIES_CONTENT = {
   },
 };
 
-const personalExperiencesImages = {
-    
-}
+export const personalExperiencesImages = [
+  {
+    image: ArCardGif,
+    description: "AR business card made with ARKIT",
+    date: "2019",
+  },
+  {
+    image: SbComponentScreen,
+    description: "File sharing project in node.js and reactjs/react native",
+    date: "2019",
+  },
+  {
+    image: ArSolarScreen,
+    description: "Little AR educational game to learn about solar system",
+    date: "2018",
+  },
+  {
+    image: PumpDrawing,
+    description: "Design and sizing of a pump for a school project",
+    date: "2017",
+  },
+  {
+    image: BreadGrillRender,
+    description: "3D render textures experiment 1",
+    date: "2017",
+  },
+  {
+    image: GlassRender,
+    description: "3D render textures experiment 2",
+    date: "2017",
+  },
+  {
+    image: BoostrScreen,
+    description:
+      "E-commerce website to coach or boost League of legend or CS:GO players",
+    date: "2016",
+  },
+  {
+    image: BoomRender,
+    description: "Hardware product design experiment of a wearable projector",
+    date: "2014",
+  },
+  {
+    image: DesktopProjectorRender,
+    description: "Hardware product design experiment of a desktop projector",
+    date: "2014",
+  },
+  {
+    image: FusionRender,
+    description:
+      "Hardware product design experiment of a smartphone with detachable parts and its OS",
+    date: "2014",
+  },
+];
 
 export default MODEL_NAMES;
-
-

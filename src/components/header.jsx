@@ -1,7 +1,6 @@
 import { createEffect, createSignal } from "solid-js";
 import AnimationComponent from "./AnimationComponent";
-import { isMobile } from "../utils/consts"
-
+import { isMobile } from "../utils/consts";
 
 const TYPING_TEXT_DESKTOP = [
   "great code.",
@@ -10,14 +9,9 @@ const TYPING_TEXT_DESKTOP = [
   "solving problems.",
 ];
 
-const TYPING_TEXT_MOBILE = [
-  "coding.",
-  "design.",
-  "piano.",
-];
+const TYPING_TEXT_MOBILE = ["coding.", "design.", "piano."];
 
 export default function Header() {
-
   const typingText = isMobile ? TYPING_TEXT_MOBILE : TYPING_TEXT_DESKTOP;
 
   const [chosenTextIndex, setChosenTextIndex] = createSignal(0);
@@ -76,7 +70,7 @@ export default function Header() {
               I am a french full-stack engineer
               <br /> who loves
               <span class=" text-4xl font-extrabold text-white">
-                <span>{" "}{currentTypedText()}</span>
+                <span> {currentTypedText()}</span>
                 <span class="text-4xl font-extrabold bg-clip-text bg-gradient-to-br from-yellow-400 to-pink-500 motion-safe:animate-pulse-fast">
                   |
                 </span>

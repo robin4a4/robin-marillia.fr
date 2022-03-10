@@ -2,7 +2,7 @@ import { onMount } from "solid-js";
 import * as THREE from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { MODEL_NAMES } from "../utils/consts";
-import { isMobile } from "../utils/consts"
+import { isMobile } from "../utils/consts";
 
 function modelLoader(scene, filename, name, position) {
   const loader = new GLTFLoader();
@@ -75,27 +75,37 @@ export default function AnimationComponent() {
     );
 
     if (!isMobile) {
-        modelLoader(scene, "./dist/assets/renders/mug.glb", MODEL_NAMES.MUG, {
-          x: 3,
-          y: 2,
-          z: 1,
-        });
-        modelLoader(scene, "./dist/assets/renders/pencil.glb", MODEL_NAMES.PENCIL, {
+      modelLoader(scene, "./dist/assets/renders/mug.glb", MODEL_NAMES.MUG, {
+        x: 3,
+        y: 2,
+        z: 1,
+      });
+      modelLoader(
+        scene,
+        "./dist/assets/renders/pencil.glb",
+        MODEL_NAMES.PENCIL,
+        {
           x: -3,
           y: -1,
           z: -1,
-        });
-        modelLoader(scene, "./dist/assets/renders/rubber.glb", MODEL_NAMES.RUBBER, {
+        }
+      );
+      modelLoader(
+        scene,
+        "./dist/assets/renders/rubber.glb",
+        MODEL_NAMES.RUBBER,
+        {
           x: 2,
           y: 0,
           z: 1,
-        });
-        modelLoader(
-          scene,
-          "./dist/assets/renders/rubix_cube.glb",
-          MODEL_NAMES.RUBIX_CUBE,
-          { x: -8, y: 3, z: -7 }
-        );
+        }
+      );
+      modelLoader(
+        scene,
+        "./dist/assets/renders/rubix_cube.glb",
+        MODEL_NAMES.RUBIX_CUBE,
+        { x: -8, y: 3, z: -7 }
+      );
     }
 
     camera.position.z = 5;
@@ -110,26 +120,26 @@ export default function AnimationComponent() {
       });
 
       if (!isMobile) {
-          animateObject(scene, MODEL_NAMES.MUG, {
-            x: time / 80000,
-            y: 0,
-            z: time / 10000,
-          });
-          animateObject(scene, MODEL_NAMES.PENCIL, {
-            x: time / 80000,
-            y: 0,
-            z: time / 10000,
-          });
-          animateObject(scene, MODEL_NAMES.RUBBER, {
-            x: -time / 80000,
-            y: 0,
-            z: -time / 10000,
-          });
-          animateObject(scene, MODEL_NAMES.RUBIX_CUBE, {
-            x: time / 80000,
-            y: 0,
-            z: time / 10000,
-          });
+        animateObject(scene, MODEL_NAMES.MUG, {
+          x: time / 80000,
+          y: 0,
+          z: time / 10000,
+        });
+        animateObject(scene, MODEL_NAMES.PENCIL, {
+          x: time / 80000,
+          y: 0,
+          z: time / 10000,
+        });
+        animateObject(scene, MODEL_NAMES.RUBBER, {
+          x: -time / 80000,
+          y: 0,
+          z: -time / 10000,
+        });
+        animateObject(scene, MODEL_NAMES.RUBIX_CUBE, {
+          x: time / 80000,
+          y: 0,
+          z: time / 10000,
+        });
       }
 
       renderer.render(scene, camera);
