@@ -1,8 +1,7 @@
 import { onMount } from "solid-js";
 import * as THREE from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-import { MODEL_NAMES } from "../utils/consts";
-import { isMobile } from "../utils/consts";
+import { MODEL_NAMES , isMobile } from "../utils/consts";
 
 function modelLoader(scene, filename, name, position) {
   const loader = new GLTFLoader();

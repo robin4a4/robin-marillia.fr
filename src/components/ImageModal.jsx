@@ -1,14 +1,13 @@
 import {
   Dialog,
   DialogPanel,
-  DialogTitle,
   Transition,
   TransitionChild,
   DialogOverlay,
 } from "solid-headless";
 import { createSignal } from "solid-js";
 
-export default function ImageModal({ image, description, date }) {
+export default function ImageModal(props) {
   const [isOpen, setIsOpen] = createSignal(false);
 
   const closeModal = () => {
@@ -23,7 +22,7 @@ export default function ImageModal({ image, description, date }) {
     <div>
       <button type="button" onClick={openModal} class="w-auto">
         <img
-          src={image}
+          src={props.image}
           class="h-32 rounded-md hover:translate-y-1 duration-200 cursor-pointer"
         />
       </button>
@@ -42,12 +41,12 @@ export default function ImageModal({ image, description, date }) {
               leaveFrom="opacity-100"
               leaveTo="opacity-0"
             >
-              <DialogOverlay className="fixed inset-0 bg-black bg-opacity-80" />
+              <DialogOverlay class="fixed inset-0 bg-black bg-opacity-80" />
             </TransitionChild>
 
             {/* This element is to trick the browser into centering the modal contents. */}
             <span
-              className="inline-block h-screen align-middle"
+              class="inline-block h-screen align-middle"
               aria-hidden="true"
             >
               &#8203;
@@ -84,15 +83,15 @@ export default function ImageModal({ image, description, date }) {
                   </button>
                 </div>
 
-                <img src={image} class="rounded-md " />
-                {description && date && (
+                <img src={props.image} class="rounded-md " />
+                {props.description && props.date && (
                   <div class="flex gap-2 items-center pt-2">
                     <span class="rounded-full px-2 py-1 font-bold bg-white">
                       <span class="bg-clip-text bg-gradient-to-r from-blue-400 to-pink-500 text-transparent">
-                        {date}
+                        {props.date}
                       </span>
                     </span>
-                    <span class="text-white">{description}</span>
+                    <span class="text-white">{props.description}</span>
                   </div>
                 )}
               </DialogPanel>

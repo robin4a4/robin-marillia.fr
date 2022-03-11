@@ -23,12 +23,7 @@ export function Tag(props) {
   );
 }
 
-
 export function Container(props) {
   const c = children(() => props.children);
-  return (
-    <div class="px-4 md:px-0 md:w-2/3 lg:w-1/2 md:m-auto">
-      {c}
-    </div>
-  )
+  return <div class="px-4 md:px-0 md:w-2/3 lg:w-1/2 md:m-auto">{c}</div>;
 }
