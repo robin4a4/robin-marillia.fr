@@ -1,10 +1,10 @@
-import Title from "./general";
+import {Title, Container} from "./generic_components";
 import { personalExperiencesImages } from "../utils/consts";
 import ImageModal from "./ImageModal";
 
 export default function PersonalExperiments() {
   return (
-    <div class="px-4 md:px-0 md:w-1/2 md:m-auto">
+    <Container>
       <Title>Personal experiments</Title>
       <div class="flex flex-wrap gap-2">
         <For each={personalExperiencesImages}>
@@ -17,6 +17,6 @@ export default function PersonalExperiments() {
           )}
         </For>
       </div>
-    </div>
+    </Container>
   );
 }

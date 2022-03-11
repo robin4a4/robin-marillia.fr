@@ -34,7 +34,7 @@ function animateObject(scene, name, rotation) {
   }
 }
 
-export default function AnimationComponent() {
+export default function ThreeAnimation() {
   let canvas;
 
   onMount(() => {
@@ -136,9 +136,9 @@ export default function AnimationComponent() {
           z: -time / 10000,
         });
         animateObject(scene, MODEL_NAMES.RUBIX_CUBE, {
-          x: time / 80000,
+          x: -time / 80000,
           y: 0,
-          z: time / 10000,
+          z: -time / 10000,
         });
       }
 

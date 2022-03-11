@@ -123,7 +123,7 @@ export const personalExperiencesImages = [
   },
   {
     image: SbComponentScreen,
-    description: "File sharing project in node.js and reactjs/react native",
+    description: "React and React native UI components library",
     date: "2019",
   },
   {
@@ -159,7 +159,8 @@ export const personalExperiencesImages = [
   },
   {
     image: DesktopProjectorRender,
-    description: "Hardware product design experiment of a desktop projector",
+    description:
+      "Hardware product design experiment of a desktop frame projector",
     date: "2014",
   },
   {

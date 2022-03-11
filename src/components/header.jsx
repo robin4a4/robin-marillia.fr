@@ -1,5 +1,5 @@
 import { createEffect, createSignal } from "solid-js";
-import AnimationComponent from "./AnimationComponent";
+import ThreeAnimation from "./ThreeAnimation";
 import { isMobile } from "../utils/consts";
 
 const TYPING_TEXT_DESKTOP = [
@@ -62,7 +62,7 @@ export default function Header() {
       </header>
       <div class="absolute top-0 bottom-0 w-full h-screen">
         <div>
-          <AnimationComponent />
+          <ThreeAnimation />
         </div>
         <div class="absolute top-0 bottom-0 mt-32 md:mt-72 w-full flex items-center justify-center px-4 md:px-0">
           <div>

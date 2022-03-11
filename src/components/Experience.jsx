@@ -1,5 +1,5 @@
 import { For } from "solid-js";
-import { Tag } from "./general";
+import { Tag } from "./generic_components";
 import ImageModal from "./ImageModal";
 import { COMPANIES_CONTENT } from "../utils/consts";
 

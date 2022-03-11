@@ -1,6 +1,6 @@
 import { children } from "solid-js";
 
-export default function Title(props) {
+export function Title(props) {
   const c = children(() => props.children);
 
   return (
@@ -21,4 +21,14 @@ export function Tag(props) {
       </span>
     </div>
   );
+}
+
+
+export function Container(props) {
+  const c = children(() => props.children);
+  return (
+    <div class="px-4 md:px-0 md:w-2/3 lg:w-1/2 md:m-auto">
+      {c}
+    </div>
+  )
 }
