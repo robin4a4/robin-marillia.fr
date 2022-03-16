@@ -2,6 +2,12 @@ import { onMount } from "solid-js";
 import * as THREE from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { MODEL_NAMES , isMobile } from "../utils/consts";
+import Macbook3DModelUrl from "../assets/renders/macbook.glb?url"
+import Mug3DModelUrl from "../assets/renders/mug.glb?url"
+import Pencil3DModelUrl from "../assets/renders/pencil.glb?url"
+import Rubber3DModelUrl from "../assets/renders/rubber.glb?url"
+import RubixCube3DModelUrl from "../assets/renders/rubix_cube.glb?url"
+
 
 function modelLoader(scene, filename, name, position) {
   const loader = new GLTFLoader();
@@ -68,20 +74,20 @@ export default function ThreeAnimation() {
 
     modelLoader(
       scene,
-      "./src/assets/renders/macbook.glb",
+      Macbook3DModelUrl,
       MODEL_NAMES.MACBOOK,
       { x: 0, y: 1.5, z: 0 }
     );
 
     if (!isMobile) {
-      modelLoader(scene, "./src/assets/renders/mug.glb", MODEL_NAMES.MUG, {
+      modelLoader(scene, Mug3DModelUrl, MODEL_NAMES.MUG, {
         x: 3,
         y: 2,
         z: 1,
       });
       modelLoader(
         scene,
-        "./src/assets/renders/pencil.glb",
+        Pencil3DModelUrl,
         MODEL_NAMES.PENCIL,
         {
           x: -3,
@@ -91,7 +97,7 @@ export default function ThreeAnimation() {
       );
       modelLoader(
         scene,
-        "./src/assets/renders/rubber.glb",
+        Rubber3DModelUrl,
         MODEL_NAMES.RUBBER,
         {
           x: 2,
@@ -101,7 +107,7 @@ export default function ThreeAnimation() {
       );
       modelLoader(
         scene,
-        "./src/assets/renders/rubix_cube.glb",
+        RubixCube3DModelUrl,
         MODEL_NAMES.RUBIX_CUBE,
         { x: -8, y: 3, z: -7 }
       );
