@@ -68,20 +68,20 @@ export default function ThreeAnimation() {
 
     modelLoader(
       scene,
-      "./dist/assets/renders/macbook.glb",
+      "./src/assets/renders/macbook.glb",
       MODEL_NAMES.MACBOOK,
       { x: 0, y: 1.5, z: 0 }
     );
 
     if (!isMobile) {
-      modelLoader(scene, "./dist/assets/renders/mug.glb", MODEL_NAMES.MUG, {
+      modelLoader(scene, "./src/assets/renders/mug.glb", MODEL_NAMES.MUG, {
         x: 3,
         y: 2,
         z: 1,
       });
       modelLoader(
         scene,
-        "./dist/assets/renders/pencil.glb",
+        "./src/assets/renders/pencil.glb",
         MODEL_NAMES.PENCIL,
         {
           x: -3,
@@ -91,7 +91,7 @@ export default function ThreeAnimation() {
       );
       modelLoader(
         scene,
-        "./dist/assets/renders/rubber.glb",
+        "./src/assets/renders/rubber.glb",
         MODEL_NAMES.RUBBER,
         {
           x: 2,
@@ -101,7 +101,7 @@ export default function ThreeAnimation() {
       );
       modelLoader(
         scene,
-        "./dist/assets/renders/rubix_cube.glb",
+        "./src/assets/renders/rubix_cube.glb",
         MODEL_NAMES.RUBIX_CUBE,
         { x: -8, y: 3, z: -7 }
       );

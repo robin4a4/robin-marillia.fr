@@ -1,5 +1,4 @@
-import { For } from "solid-js";
-import { Title, Container } from "./generic_components";
+import {Title, Container} from "./genericComponents";
 import { personalExperiencesImages } from "../utils/consts";
 import ImageModal from "./ImageModal";
 

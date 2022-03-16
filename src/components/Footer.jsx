@@ -1,4 +1,4 @@
-import { Container } from "./generic_components";
+import { Container } from "./genericComponents";
 
 export default function Footer() {
   return (
