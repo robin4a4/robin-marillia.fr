@@ -11,7 +11,13 @@ export default function Experience(props) {
     <div class="flex w-full gap-4 items-start mb-16">
       <div class="bg-neutral-900 rounded">
         <div class="bg-neutral-100 p-4 rounded-md">
-          <img src={content.logo.image} class="min-w-[3rem] max-w-[3rem] h-auto" alt="" width={content.logo.width} height={content.logo.height} />
+          <img
+            src={content.logo.image}
+            class="min-w-[3rem] max-w-[3rem] h-auto"
+            alt=""
+            width={content.logo.width}
+            height={content.logo.height}
+          />
         </div>
         <div class="flex flex-col items-center my-2 text-white gap-2">
           {content.to && (
