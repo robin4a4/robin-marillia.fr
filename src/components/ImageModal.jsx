@@ -20,7 +20,7 @@ export default function ImageModal(props) {
 
   return (
     <div>
-      <button type="button" onClick={openModal}>
+      <button type="button" onClick={openModal} aria-label="open image">
         <img
           src={props.image}
           class="h-32 md:h-44 w-auto rounded-md hover:translate-y-1 duration-200 cursor-pointer"

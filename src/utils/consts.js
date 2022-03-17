@@ -57,7 +57,7 @@ export const COMPANIES = {
 
 export const COMPANIES_CONTENT = {
   [COMPANIES.HELLOWATT]: {
-    logo: HellowattLogo,
+    logo: {image: HellowattLogo, width: 160, height: 160},
     website: "https://www.hellowatt.fr/",
     from: "2020",
     to: "Today",
@@ -71,7 +71,7 @@ export const COMPANIES_CONTENT = {
     ],
   },
   [COMPANIES.SRATI]: {
-    logo: SratiLogo,
+    logo: {image: SratiLogo, width: 195, height: 105},
     website: "https://www.srati.com/",
     from: "2019",
     title: "Web development for SRATI.com",
@@ -79,7 +79,7 @@ export const COMPANIES_CONTENT = {
     technologies: [TECHNOLOGY.WORDPRESS, TECHNOLOGY.PHP, TECHNOLOGY.JAVASCRIPT],
   },
   [COMPANIES.SIPARTECH]: {
-    logo: SipartechLogo,
+    logo: {image: SipartechLogo, width: 477, height: 153},
     website: "https://www.sipartech.com/",
     from: "2019",
     title: "Data science internship at Sipartech",
@@ -92,7 +92,7 @@ export const COMPANIES_CONTENT = {
     ],
   },
   [COMPANIES.FIGNOSS]: {
-    logo: FignossLogo,
+    logo: {image: FignossLogo, width: 1651, height: 711},
     from: "2018",
     to: "2019",
     title: "Communication and design for La Nuit des Fignoss",
@@ -121,7 +121,7 @@ export const COMPANIES_CONTENT = {
     ],
   },
   [COMPANIES.IMMERSION]: {
-    logo: ImmersionLogo,
+    logo: {image: ImmersionLogo, width: 720, height: 460},
     website: "https://www.immersion.fr/",
     from: "2018",
     title: "Process and production internship at Immersion",
