@@ -1,5 +1,5 @@
 import { For } from "solid-js";
-import {Title, Container} from "./genericComponents";
+import { Title, Container } from "./genericComponents";
 import { COMPANIES } from "../utils/consts";
 import Experience from "./Experience";
 

@@ -48,10 +48,7 @@ export default function ImageModal(props) {
             </TransitionChild>
 
             {/* This element is to trick the browser into centering the modal contents. */}
-            <span
-              class="inline-block h-screen align-middle"
-              aria-hidden="true"
-            >
+            <span class="inline-block h-screen align-middle" aria-hidden="true">
               &#8203;
             </span>
             <TransitionChild
@@ -86,7 +83,14 @@ export default function ImageModal(props) {
                   </button>
                 </div>
 
-                <img loading="lazy" src={props.image} class="rounded-md" alt={props.description ? props.description : ""} width={props.width} height={props.height}/>
+                <img
+                  loading="lazy"
+                  src={props.image}
+                  class="rounded-md"
+                  alt={props.description ? props.description : ""}
+                  width={props.width}
+                  height={props.height}
+                />
                 {props.description && props.date && (
                   <div class="flex gap-2 items-center pt-2">
                     <span class="rounded-full px-2 py-1 font-bold bg-white">

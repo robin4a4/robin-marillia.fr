@@ -1,13 +1,12 @@
 import { onMount } from "solid-js";
 import * as THREE from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-import { MODEL_NAMES , isMobile } from "../utils/consts";
-import Macbook3DModelUrl from "../assets/renders/macbook.glb?url"
-import Mug3DModelUrl from "../assets/renders/mug.glb?url"
-import Pencil3DModelUrl from "../assets/renders/pencil.glb?url"
-import Rubber3DModelUrl from "../assets/renders/rubber.glb?url"
-import RubixCube3DModelUrl from "../assets/renders/rubix_cube.glb?url"
-
+import { MODEL_NAMES, isMobile } from "../utils/consts";
+import Macbook3DModelUrl from "../assets/renders/macbook.glb?url";
+import Mug3DModelUrl from "../assets/renders/mug.glb?url";
+import Pencil3DModelUrl from "../assets/renders/pencil.glb?url";
+import Rubber3DModelUrl from "../assets/renders/rubber.glb?url";
+import RubixCube3DModelUrl from "../assets/renders/rubix_cube.glb?url";
 
 function modelLoader(scene, filename, name, position) {
   const loader = new GLTFLoader();
@@ -72,12 +71,11 @@ export default function ThreeAnimation() {
     rectLight4.position.set(-5, 5, 5);
     scene.add(rectLight4);
 
-    modelLoader(
-      scene,
-      Macbook3DModelUrl,
-      MODEL_NAMES.MACBOOK,
-      { x: 0, y: 1.5, z: 0 }
-    );
+    modelLoader(scene, Macbook3DModelUrl, MODEL_NAMES.MACBOOK, {
+      x: 0,
+      y: 1.5,
+      z: 0,
+    });
 
     if (!isMobile) {
       modelLoader(scene, Mug3DModelUrl, MODEL_NAMES.MUG, {
@@ -85,32 +83,21 @@ export default function ThreeAnimation() {
         y: 2,
         z: 1,
       });
-      modelLoader(
-        scene,
-        Pencil3DModelUrl,
-        MODEL_NAMES.PENCIL,
-        {
-          x: -3,
-          y: -1,
-          z: -1,
-        }
-      );
-      modelLoader(
-        scene,
-        Rubber3DModelUrl,
-        MODEL_NAMES.RUBBER,
-        {
-          x: 2,
-          y: 0,
-          z: 1,
-        }
-      );
-      modelLoader(
-        scene,
-        RubixCube3DModelUrl,
-        MODEL_NAMES.RUBIX_CUBE,
-        { x: -8, y: 3, z: -7 }
-      );
+      modelLoader(scene, Pencil3DModelUrl, MODEL_NAMES.PENCIL, {
+        x: -3,
+        y: -1,
+        z: -1,
+      });
+      modelLoader(scene, Rubber3DModelUrl, MODEL_NAMES.RUBBER, {
+        x: 2,
+        y: 0,
+        z: 1,
+      });
+      modelLoader(scene, RubixCube3DModelUrl, MODEL_NAMES.RUBIX_CUBE, {
+        x: -8,
+        y: 3,
+        z: -7,
+      });
     }
 
     camera.position.z = 5;

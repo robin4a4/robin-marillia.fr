@@ -61,7 +61,13 @@ export default function Experience(props) {
         {content.images && (
           <div class="flex gap-2 flex-wrap">
             <For each={content.images}>
-              {(data) => <ImageModal image={data.image} width={data.width} height={data.height} />}
+              {(data) => (
+                <ImageModal
+                  image={data.image}
+                  width={data.width}
+                  height={data.height}
+                />
+              )}
             </For>
           </div>
         )}

@@ -103,21 +103,21 @@ export const COMPANIES_CONTENT = {
       TECHNOLOGY.PREMIERE,
     ],
     images: [
-        {
-            image: FlyersFignossIllu,
-            width: 3768,
-            height: 2528,
-        }, 
-        {
-            image: PosterFignossIllu,
-            width: 2732,
-            height: 1920,
-        }, 
-        {
-            image: TicketsFignossIllu,
-            width: 1080,
-            height: 1080,
-        }, 
+      {
+        image: FlyersFignossIllu,
+        width: 3768,
+        height: 2528,
+      },
+      {
+        image: PosterFignossIllu,
+        width: 2732,
+        height: 1920,
+      },
+      {
+        image: TicketsFignossIllu,
+        width: 1080,
+        height: 1080,
+      },
     ],
   },
   [COMPANIES.IMMERSION]: {
@@ -136,35 +136,35 @@ export const personalExperiencesImages = [
     description: "React and React native UI components library",
     date: "2019",
     width: 612,
-    height: 312
+    height: 312,
   },
   {
     image: ArSolarScreen,
     description: "Little AR educational game to learn about solar system",
     date: "2018",
     width: 143,
-    height: 143
+    height: 143,
   },
   {
     image: PumpDrawing,
     description: "Design and sizing of a pump for a school project",
     date: "2017",
     width: 613,
-    height: 403
+    height: 403,
   },
   {
     image: BreadGrillRender,
     description: "3D render textures experiment 1",
     date: "2017",
     width: 401,
-    height: 302
+    height: 302,
   },
   {
     image: GlassRender,
     description: "3D render textures experiment 2",
     date: "2017",
     width: 348,
-    height: 325
+    height: 325,
   },
   {
     image: BoostrScreen,
@@ -172,7 +172,7 @@ export const personalExperiencesImages = [
       "E-commerce website to coach or boost League of legend or CS:GO players",
     date: "2016",
     width: 443,
-    height: 314
+    height: 314,
   },
   {
     image: FusionRender,
@@ -180,14 +180,14 @@ export const personalExperiencesImages = [
       "Hardware product design experiment of a smartphone with detachable parts and its OS",
     date: "2014",
     width: 427,
-    height: 279
+    height: 279,
   },
   {
     image: BoomRender,
     description: "Hardware product design experiment of a wearable projector",
     date: "2014",
     width: 1920,
-    height: 1080
+    height: 1080,
   },
   {
     image: DesktopProjectorRender,
@@ -195,7 +195,7 @@ export const personalExperiencesImages = [
       "Hardware product design experiment of a desktop frame projector",
     date: "2014",
     width: 428,
-    height: 387
+    height: 387,
   },
 ];
 
