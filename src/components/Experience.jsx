@@ -70,6 +70,7 @@ export default function Experience(props) {
               {(data) => (
                 <ImageModal
                   image={data.image}
+                  imageMin={data.imageMin}
                   width={data.width}
                   height={data.height}
                 />

@@ -22,7 +22,8 @@ export default function ImageModal(props) {
     <div>
       <button type="button" onClick={openModal} aria-label="open image">
         <img
-          src={props.image}
+          loading="lazy"
+          src={props.imageMin}
           class="h-32 md:h-44 w-auto rounded-md hover:translate-y-1 duration-200 cursor-pointer"
           alt={props.description ? props.description : ""}
           width={props.width}

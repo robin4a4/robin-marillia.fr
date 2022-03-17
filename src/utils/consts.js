@@ -1,21 +1,34 @@
-import HellowattLogo from "../assets/logo/hellowatt-logo.png";
-import SratiLogo from "../assets/logo/srati-logo.png";
-import SipartechLogo from "../assets/logo/sipartech-logo.png";
-import ImmersionLogo from "../assets/logo/immersion-logo.jpeg";
-import FignossLogo from "../assets/logo/fignoss-logo.png";
+import HellowattLogo from "../assets/logo/hellowatt-logo.webp";
+import SratiLogo from "../assets/logo/srati-logo.webp";
+import SipartechLogo from "../assets/logo/sipartech-logo.webp";
+import ImmersionLogo from "../assets/logo/immersion-logo.webp";
+import FignossLogo from "../assets/logo/fignoss-logo.webp";
 
-import FlyersFignossIllu from "../assets/images/flyers-fignoss-illu.jpg";
-import PosterFignossIllu from "../assets/images/poster-fignoss-illu.jpg";
-import TicketsFignossIllu from "../assets/images/tickets-fignoss-illu.png";
-import ArSolarScreen from "../assets/images/arsolar-screen.jpg";
-import BoomRender from "../assets/images/boom-render.png";
-import BoostrScreen from "../assets/images/boostr-screen.jpg";
-import BreadGrillRender from "../assets/images/bread-grill-render.png";
-import DesktopProjectorRender from "../assets/images/desktop-projector-render.png";
-import FusionRender from "../assets/images/fusion-render.png";
-import GlassRender from "../assets/images/glass-render.png";
-import PumpDrawing from "../assets/images/pump-drawing.png";
-import SbComponentScreen from "../assets/images/sb-component-screen.png";
+import FlyersFignossIllu from "../assets/images/flyers-fignoss-illu.webp";
+import PosterFignossIllu from "../assets/images/poster-fignoss-illu.webp";
+import TicketsFignossIllu from "../assets/images/tickets-fignoss-illu.webp";
+import ArSolarScreen from "../assets/images/arsolar-screen.webp";
+import BoomRender from "../assets/images/boom-render.webp";
+import BoostrScreen from "../assets/images/boostr-screen.webp";
+import BreadGrillRender from "../assets/images/bread-grill-render.webp";
+import DesktopProjectorRender from "../assets/images/desktop-projector-render.webp";
+import FusionRender from "../assets/images/fusion-render.webp";
+import GlassRender from "../assets/images/glass-render.webp";
+import PumpDrawing from "../assets/images/pump-drawing.webp";
+import SbComponentScreen from "../assets/images/sb-component-screen.webp";
+
+import FlyersFignossIlluMin from "../assets/images/min/flyers-fignoss-illu-min.webp";
+import PosterFignossIlluMin from "../assets/images/min/poster-fignoss-illu-min.webp";
+import TicketsFignossIlluMin from "../assets/images/min/tickets-fignoss-illu-min.webp";
+import ArSolarScreenMin from "../assets/images/min/arsolar-screen-min.webp";
+import BoomRenderMin from "../assets/images/min/boom-render-min.webp";
+import BoostrScreenMin from "../assets/images/min/boostr-screen-min.webp";
+import BreadGrillRenderMin from "../assets/images/min/bread-grill-render-min.webp";
+import DesktopProjectorRenderMin from "../assets/images/min/desktop-projector-render-min.webp";
+import FusionRenderMin from "../assets/images/min/fusion-render-min.webp";
+import GlassRenderMin from "../assets/images/min/glass-render-min.webp";
+import PumpDrawingMin from "../assets/images/min/pump-drawing-min.webp";
+import SbComponentScreenMin from "../assets/images/min/sb-component-screen-min.webp";
 
 export const isMobile = window.innerWidth < 768;
 
@@ -105,16 +118,19 @@ export const COMPANIES_CONTENT = {
     images: [
       {
         image: FlyersFignossIllu,
+        imageMin: FlyersFignossIlluMin,
         width: 3768,
         height: 2528,
       },
       {
         image: PosterFignossIllu,
+        imageMin: PosterFignossIlluMin,
         width: 2732,
         height: 1920,
       },
       {
         image: TicketsFignossIllu,
+        imageMin: TicketsFignossIlluMin,
         width: 1080,
         height: 1080,
       },
@@ -133,6 +149,7 @@ export const COMPANIES_CONTENT = {
 export const personalExperiencesImages = [
   {
     image: SbComponentScreen,
+    imageMin: SbComponentScreenMin,
     description: "React and React native UI components library",
     date: "2019",
     width: 612,
@@ -140,6 +157,7 @@ export const personalExperiencesImages = [
   },
   {
     image: ArSolarScreen,
+    imageMin: ArSolarScreenMin,
     description: "Little AR educational game to learn about solar system",
     date: "2018",
     width: 143,
@@ -147,6 +165,7 @@ export const personalExperiencesImages = [
   },
   {
     image: PumpDrawing,
+    imageMin: PumpDrawingMin,
     description: "Design and sizing of a pump for a school project",
     date: "2017",
     width: 613,
@@ -154,6 +173,7 @@ export const personalExperiencesImages = [
   },
   {
     image: BreadGrillRender,
+    imageMin: BreadGrillRenderMin,
     description: "3D render textures experiment 1",
     date: "2017",
     width: 401,
@@ -161,6 +181,7 @@ export const personalExperiencesImages = [
   },
   {
     image: GlassRender,
+    imageMin: GlassRenderMin,
     description: "3D render textures experiment 2",
     date: "2017",
     width: 348,
@@ -168,6 +189,7 @@ export const personalExperiencesImages = [
   },
   {
     image: BoostrScreen,
+    imageMin: BoostrScreenMin,
     description:
       "E-commerce website to coach or boost League of legend or CS:GO players",
     date: "2016",
@@ -176,6 +198,7 @@ export const personalExperiencesImages = [
   },
   {
     image: FusionRender,
+    imageMin: FusionRenderMin,
     description:
       "Hardware product design experiment of a smartphone with detachable parts and its OS",
     date: "2014",
@@ -184,6 +207,7 @@ export const personalExperiencesImages = [
   },
   {
     image: BoomRender,
+    imageMin: BoomRenderMin,
     description: "Hardware product design experiment of a wearable projector",
     date: "2014",
     width: 1920,
@@ -191,6 +215,7 @@ export const personalExperiencesImages = [
   },
   {
     image: DesktopProjectorRender,
+    imageMin: DesktopProjectorRenderMin,
     description:
       "Hardware product design experiment of a desktop frame projector",
     date: "2014",

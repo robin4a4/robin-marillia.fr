@@ -12,6 +12,7 @@ export default function PersonalExperiments() {
           {(experience) => (
             <ImageModal
               image={experience.image}
+              imageMin={experience.imageMin}
               description={experience.description}
               date={experience.date}
               width={experience.width}
