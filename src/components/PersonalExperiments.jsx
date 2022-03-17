@@ -13,6 +13,8 @@ export default function PersonalExperiments() {
               image={experience.image}
               description={experience.description}
               date={experience.date}
+              width={experience.width}
+              height={experience.height}
             />
           )}
         </For>

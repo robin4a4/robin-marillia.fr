@@ -20,10 +20,13 @@ export default function ImageModal(props) {
 
   return (
     <div>
-      <button type="button" onClick={openModal} class="w-auto">
+      <button type="button" onClick={openModal}>
         <img
           src={props.image}
-          class="h-32 rounded-md hover:translate-y-1 duration-200 cursor-pointer"
+          class="h-32 md:h-44 w-auto rounded-md hover:translate-y-1 duration-200 cursor-pointer"
+          alt={props.description ? props.description : ""}
+          width={props.width}
+          height={props.height}
         />
       </button>
       <Transition appear show={isOpen()}>
@@ -83,7 +86,7 @@ export default function ImageModal(props) {
                   </button>
                 </div>
 
-                <img src={props.image} class="rounded-md " />
+                <img loading="lazy" src={props.image} class="rounded-md" alt={props.description ? props.description : ""} width={props.width} height={props.height}/>
                 {props.description && props.date && (
                   <div class="flex gap-2 items-center pt-2">
                     <span class="rounded-full px-2 py-1 font-bold bg-white">
