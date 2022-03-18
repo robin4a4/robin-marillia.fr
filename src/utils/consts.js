@@ -75,7 +75,7 @@ export const COMPANIES_CONTENT = {
     from: "2020",
     to: "Today",
     title: "Fullstack engineer at Hello watt",
-    text: "Fulltime job with devlopment and release of new features every two weeks for the startup specialized in the energy market.",
+    text: "Fulltime job with development and release of new features every two weeks for the startup specialized in the energy market.",
     technologies: [
       TECHNOLOGY.DJANGO,
       TECHNOLOGY.REACTJS,
@@ -88,7 +88,7 @@ export const COMPANIES_CONTENT = {
     website: "https://www.srati.com/",
     from: "2019",
     title: "Web development for SRATI.com",
-    text: "During 6 month I developped an e-business platform for SRATI. They sell industrial ducts and wanted to expand their business on the web. I used WooCommerce and tweaked some plugins using php and javascript to improve the user experience.",
+    text: "During 6 month I developped an e-business platform for SRATI. They sell industrial ducts and wanted to expand their business on the web. I used WooCommerce and tweaked some plugins using PHP and Javascript to improve the user experience.",
     technologies: [TECHNOLOGY.WORDPRESS, TECHNOLOGY.PHP, TECHNOLOGY.JAVASCRIPT],
   },
   [COMPANIES.SIPARTECH]: {
@@ -96,7 +96,7 @@ export const COMPANIES_CONTENT = {
     website: "https://www.sipartech.com/",
     from: "2019",
     title: "Data science internship at Sipartech",
-    text: "During a one month internship I had to develop a tool that automatically extracts numbers and information from the receipts of the company. I used python and Tensorflow to create the script and PHP and Javascript to create an interface.",
+    text: "During a one month internship I had to develop a tool that automatically extracts numbers and information from the receipts of the company. I used Python and Tensorflow to create the script and PHP and Javascript to create an interface.",
     technologies: [
       TECHNOLOGY.PYTHON,
       TECHNOLOGY.PHP,
