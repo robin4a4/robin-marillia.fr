@@ -1,7 +1,9 @@
 # Robin Marillia's portfolio.
 
-technologies used :
+Technologies used :
 
 - solidJS
 - tailwindcss
 - three.js
+
+Deployed with AWS CloudFront
