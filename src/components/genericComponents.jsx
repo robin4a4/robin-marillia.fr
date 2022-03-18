@@ -4,7 +4,7 @@ export function Title(props) {
   const c = children(() => props.children);
 
   return (
-    <div class="mb-16 sticky top-0 pt-8 bg-black pb-8 -mx-1">
+    <div class="mb-16 sticky top-0 pt-8 bg-black pb-8 -mx-1 z-10">
       <h2 class="text-2xl md:text-4xl font-extrabold text-white relative z-10">
         {c}
       </h2>

@@ -17,18 +17,18 @@ import GlassRender from "../assets/images/glass-render.webp";
 import PumpDrawing from "../assets/images/pump-drawing.webp";
 import SbComponentScreen from "../assets/images/sb-component-screen.webp";
 
-import FlyersFignossIlluMin from "../assets/images/min/flyers-fignoss-illu-min.webp";
-import PosterFignossIlluMin from "../assets/images/min/poster-fignoss-illu-min.webp";
-import TicketsFignossIlluMin from "../assets/images/min/tickets-fignoss-illu-min.webp";
-import ArSolarScreenMin from "../assets/images/min/arsolar-screen-min.webp";
-import BoomRenderMin from "../assets/images/min/boom-render-min.webp";
-import BoostrScreenMin from "../assets/images/min/boostr-screen-min.webp";
-import BreadGrillRenderMin from "../assets/images/min/bread-grill-render-min.webp";
-import DesktopProjectorRenderMin from "../assets/images/min/desktop-projector-render-min.webp";
-import FusionRenderMin from "../assets/images/min/fusion-render-min.webp";
-import GlassRenderMin from "../assets/images/min/glass-render-min.webp";
-import PumpDrawingMin from "../assets/images/min/pump-drawing-min.webp";
-import SbComponentScreenMin from "../assets/images/min/sb-component-screen-min.webp";
+import FlyersFignossIlluMin from "../assets/images/min/256/flyers-fignoss-illu.webp";
+import PosterFignossIlluMin from "../assets/images/min/256/poster-fignoss-illu.webp";
+import TicketsFignossIlluMin from "../assets/images/min/256/tickets-fignoss-illu.webp";
+import ArSolarScreenMin from "../assets/images/min/256/arsolar-screen.webp";
+import BoomRenderMin from "../assets/images/min/256/boom-render.webp";
+import BoostrScreenMin from "../assets/images/min/256/boostr-screen.webp";
+import BreadGrillRenderMin from "../assets/images/min/256/bread-grill-render.webp";
+import DesktopProjectorRenderMin from "../assets/images/min/256/desktop-projector-render.webp";
+import FusionRenderMin from "../assets/images/min/256/fusion-render.webp";
+import GlassRenderMin from "../assets/images/min/256/glass-render.webp";
+import PumpDrawingMin from "../assets/images/min/256/pump-drawing.webp";
+import SbComponentScreenMin from "../assets/images/min/256/sb-component-screen.webp";
 
 export const isMobile = window.innerWidth < 768;
 
@@ -160,8 +160,8 @@ export const personalExperiencesImages = [
     imageMin: ArSolarScreenMin,
     description: "Little AR educational game to learn about solar system",
     date: "2018",
-    width: 143,
-    height: 143,
+    width: 443,
+    height: 443,
   },
   {
     image: PumpDrawing,
